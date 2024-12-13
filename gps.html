@@ -8,8 +8,8 @@
 </head>
 <body>
 <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-    <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: 41.8988947; longitude: 12.5174386" scale="10 10 10"></a-entity>
+    <a-camera gps-new-camera='gpsMaxDistance: 5'></a-camera>
+    <a-entity gps-new-entity-place="latitude: 41.8988947; longitude: 12.5174386" scale="10 10 10" position="0 0 0" gltf-model="https://federicogerardi.ovh/arjs-test/trex/scene.gltf"></a-entity>
 </a-scene>
 </body>
 </html>
